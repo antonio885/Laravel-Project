@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/axion.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <h1>Registro de cantidatos</h1>
+    </div>
+    <div>
+        <div class="input-group input-group-lg ">
+            <span class="input-group-text" id="inputGroup-sizing-lg">candidato</span>
+            <input type="text" class="form-control" id="txtcandidato" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>        
+          <div class="input-group input-group-lg ">
+            <span class="input-group-text" id="inputGroup-sizing-lg">partido politico</span>
+            <input id="txtpartido" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>
+    </div>
+    <div>
+        <button onclick="readvotosnulos()" id="txtvotosnulo" type="button" value="anulado" class="btn btn-success">votos anulado</button>
+        <button onclick="readvotosblanco()" id="txtblanco" type="button" value="blanco" class="btn btn-info">votos en blanco</button>
+    </div>
+    <div>
+        <select   name="" id="selectvotoscan"> 
+        </select>
+        <select onchange="votostotalescan()"  name="" id="txtcandidatos"></select>
+  
+    </div>
+    <div>
+        <h2 id="votostotales"></h2>
+        <h2 id="txtnulos"></h2>
+<h2 id="totalVotos"></h2>
+<h2 id="mesatotal"></h2>
+<h2 id="totalcandidatos"></h2>
+    </div>
+    <div>
+        <button onclick="postulacion()" type="button" class="btn btn-primary">postular cantidato</button>
+    </div>
+<div id="candidatosview"></div>
+<div id="mesaview"></div>
+<div id="nulosvotos"></div>
+</body>
+</html>
+<script src="../js/candidato.js"></script>
